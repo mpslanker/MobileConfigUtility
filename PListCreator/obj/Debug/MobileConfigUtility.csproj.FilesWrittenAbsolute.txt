@@ -1,6 +1,0 @@
-/Users/mslanker/Dropbox/MobileConfigUtility/PListCreator/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/mslanker/Dropbox/MobileConfigUtility/PListCreator/bin/Debug/PListCreator.exe.config
-/Users/mslanker/Dropbox/MobileConfigUtility/PListCreator/bin/Debug/PListCreator.exe.mdb
-/Users/mslanker/Dropbox/MobileConfigUtility/PListCreator/bin/Debug/PListCreator.exe
-/Users/mslanker/Dropbox/MobileConfigUtility/PListCreator/obj/Debug/PListCreator.exe
-/Users/mslanker/Dropbox/MobileConfigUtility/PListCreator/obj/Debug/PListCreator.exe.mdb
