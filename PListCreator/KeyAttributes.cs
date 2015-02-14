@@ -34,7 +34,7 @@ namespace MobileConfigUtility
             KeyName = keyName;
             Presence = presence;
             PType = pType;
-            DefaultsTo = "default";
+			//DefaultsTo = "default";
         }
 
         public KeyAttributes (string keyName, PlistType pType, string defaultsTo, Presence presence = Presence.Optional)

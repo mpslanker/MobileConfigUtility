@@ -85,6 +85,7 @@ namespace MobileConfigUtility
 			PayloadUUID = "";
 			PayloadType = "com.apple.eas.account";		// iOS PayloadType
 			// PayloadType = "com.apple.ews.account";	// OS X PayloadType
+
 			PayloadVersion = 1;
 		}
 	}

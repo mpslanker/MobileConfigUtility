@@ -42,6 +42,18 @@ namespace MobileConfigUtility
             //PayloadDisplayName = String.Empty;
             //PayloadDescription = "Example Configuration";
             //PayloadOrganization = "example.com";
+			PropertyInfo[] properties = this.GetType().GetProperties();
+			Array.Sort(properties, delegate(PropertyInfo pi1, PropertyInfo pi2) { return pi1.Name.CompareTo(pi2.Name); });
+			foreach (PropertyInfo pi in properties) {
+			  foreach (object attr in pi.GetCustomAttributes(true)) {
+			      if (attr is KeyAttributes) {
+			          KeyAttributes ka = attr as KeyAttributes;
+			          if (!String.IsNullOrEmpty (ka.DefaultsTo)) {
+							pi.SetValue(this, Convert.ChangeType(ka.DefaultsTo, pi.PropertyType));
+			          }
+			      }
+			  }
+			}
         }
 
         public virtual void ReadXml(XmlReader reader)
