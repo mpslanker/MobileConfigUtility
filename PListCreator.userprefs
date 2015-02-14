@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="PListCreator/MobileConfigUtility.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PListCreator/Program.cs">
+    <Files>
+      <File FileName="PListCreator/Payload.cs" Line="51" Column="51" />
+      <File FileName="PListCreator/Profile.cs" Line="2" Column="2" />
+      <File FileName="PListCreator/Plist.cs" Line="29" Column="29" />
+      <File FileName="PListCreator/Program.cs" Line="6" Column="6" />
+      <File FileName="PListCreator/Payloads/EmailPayload.cs" Line="10" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
