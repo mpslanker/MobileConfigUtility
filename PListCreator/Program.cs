@@ -84,7 +84,19 @@ namespace MobileConfigUtility
             emailPayload.SMIMEEnablePerMessageSwitch = false;
             emailPayload.disableMailRecentsSyncing = false;
             
+			ExchangePayload exchPayload = new ExchangePayload ();
+
+			exchPayload.PayloadDisplayName = "EXCHANGE_MAIL";
+			exchPayload.PayloadIdentifier = "Demo-Identifier.Exchange";
+			exchPayload.PayloadUUID = "00000000-0000-0000-0000-000000000000";
+			exchPayload.PayloadVersion = 1;
+			exchPayload.EmailAddress = "exchange@example.com";
+			exchPayload.UserName = "username";
+			exchPayload.Password = "your_password";
+			exchPayload.Host = "owa.example.com";
+
             profile.PayloadContent.Add (emailPayload);
+			profile.PayloadContent.Add (exchPayload);
 
             // Write to file
             plist.Create(profile);
