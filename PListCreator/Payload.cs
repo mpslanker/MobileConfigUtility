@@ -48,7 +48,7 @@ namespace MobileConfigUtility
 			  foreach (object attr in pi.GetCustomAttributes(true)) {
 			      if (attr is KeyAttributes) {
 			          KeyAttributes ka = attr as KeyAttributes;
-			          if (!String.IsNullOrEmpty (ka.DefaultsTo)) {
+						if (ka.DefaultsTo != "default") {
 							pi.SetValue(this, Convert.ChangeType(ka.DefaultsTo, pi.PropertyType));
 			          }
 			      }

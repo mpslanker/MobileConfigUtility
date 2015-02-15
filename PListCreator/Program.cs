@@ -95,7 +95,7 @@ namespace MobileConfigUtility
 			exchPayload.Password = "your_password";
 			exchPayload.Host = "owa.example.com";
 
-            profile.PayloadContent.Add (emailPayload);
+            //profile.PayloadContent.Add (emailPayload);
 			profile.PayloadContent.Add (exchPayload);
 
             // Write to file
