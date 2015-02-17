@@ -35,13 +35,6 @@ namespace MobileConfigUtility
 
         public Payload()
         {
-            //PayloadType = "mobileconfig";
-            //PayloadVersion = 1;
-            //PayloadIdentifier = "com.example.Configuration";
-            //PayloadUUID = "ID:1234;";
-            //PayloadDisplayName = String.Empty;
-            //PayloadDescription = "Example Configuration";
-            //PayloadOrganization = "example.com";
 			PropertyInfo[] properties = this.GetType().GetProperties();
 			Array.Sort(properties, delegate(PropertyInfo pi1, PropertyInfo pi2) { return pi1.Name.CompareTo(pi2.Name); });
 			foreach (PropertyInfo pi in properties) {
@@ -53,7 +46,7 @@ namespace MobileConfigUtility
 			          }
 			      }
 			  }
-			}
+			}		
         }
 
         public virtual void ReadXml(XmlReader reader)
@@ -66,6 +59,14 @@ namespace MobileConfigUtility
             //writer.WriteStartElement("dict");
             // This XmlSerializer is needed for complex members.
             XmlSerializer serial = new XmlSerializer(typeof(Payload));
+
+			// Set PayloadUUID, PayloadIdentifier
+			PayloadUUID = Guid.NewGuid ().ToString ();
+			PayloadIdentifier = System.Environment.MachineName + "." + Guid.NewGuid ().ToString();
+			if (PayloadType != null && !PayloadType.Equals("Configuration"))
+			{
+				PayloadIdentifier = PayloadIdentifier + "." + PayloadType + "." + Guid.NewGuid ().ToString ();
+			}
 
             PropertyInfo[] properties = this.GetType().GetProperties();
             Array.Sort(properties, delegate(PropertyInfo pi1, PropertyInfo pi2) { return pi1.Name.CompareTo(pi2.Name); });
