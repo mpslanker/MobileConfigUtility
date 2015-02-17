@@ -65,7 +65,7 @@ namespace MobileConfigUtility
 			PayloadIdentifier = System.Environment.MachineName + "." + Guid.NewGuid ().ToString();
 			if (PayloadType != null && !PayloadType.Equals("Configuration"))
 			{
-				PayloadIdentifier = PayloadIdentifier + "." + PayloadType + "." + Guid.NewGuid ().ToString ();
+				PayloadIdentifier = PayloadIdentifier + "." + PayloadType + "." + PayloadUUID;
 			}
 
             PropertyInfo[] properties = this.GetType().GetProperties();
