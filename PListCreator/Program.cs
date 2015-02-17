@@ -51,15 +51,15 @@ namespace MobileConfigUtility
             Profile profile = new Profile();
             
             profile.PayloadDisplayName = "Demo Display Name";
-            profile.PayloadIdentifier = "Demo-Identifier";
-            profile.PayloadUUID = "00000000-0000-0000-0000-000000000000";
+            //profile.PayloadIdentifier = "Demo-Identifier";
+            //profile.PayloadUUID = "00000000-0000-0000-0000-000000000000";
 
             EmailPayload emailPayload = new EmailPayload ();
 
             emailPayload.PayloadDisplayName = "NON-EXCHANGE_MAIL";
-            emailPayload.PayloadIdentifier = "Demo-Identifier.Email";
-            emailPayload.PayloadUUID = "00000000-0000-0000-0000-000000000000";
-            emailPayload.PayloadVersion = 1;
+            //emailPayload.PayloadIdentifier = "Demo-Identifier.Email";
+            //emailPayload.PayloadUUID = "00000000-0000-0000-0000-000000000000";
+            //emailPayload.PayloadVersion = 1;
             emailPayload.EmailAccountDescription = "POP3 Email Account.";
             emailPayload.EmailAccountName = "Your Display Name";
             emailPayload.EmailAccountType = EmailAccountTypes.EmailTypeIMAP;
@@ -71,7 +71,7 @@ namespace MobileConfigUtility
             emailPayload.IncomingMailServerUsername = "email@example.com";
             emailPayload.IncomingPassword = "your_password";
             emailPayload.OutgoingPasswordSameAsIncomingPassword = true;
-            emailPayload.OutgoingMailServerAuthentication = "EmailAuthPassword";
+            emailPayload.OutgoingMailServerAuthentication = ServerAuthMethods.EmailAuthPassword;
             emailPayload.OutgoingMailServerHostName = "email.example.com";
             emailPayload.OutgoingMailServerPortNumber = 25;
             emailPayload.OutgoingMailServerUseSSL = false;
@@ -87,15 +87,15 @@ namespace MobileConfigUtility
 			ExchangePayload exchPayload = new ExchangePayload ();
 
 			exchPayload.PayloadDisplayName = "EXCHANGE_MAIL";
-			exchPayload.PayloadIdentifier = "Demo-Identifier.Exchange";
-			exchPayload.PayloadUUID = "00000000-0000-0000-0000-000000000000";
-			exchPayload.PayloadVersion = 1;
+			//exchPayload.PayloadIdentifier = "Demo-Identifier.Exchange";
+			//exchPayload.PayloadUUID = "00000000-0000-0000-0000-000000000000";
+			//exchPayload.PayloadVersion = 1;
 			exchPayload.EmailAddress = "exchange@example.com";
 			exchPayload.UserName = "username";
 			exchPayload.Password = "your_password";
 			exchPayload.Host = "owa.example.com";
 
-            profile.PayloadContent.Add (emailPayload);
+            //profile.PayloadContent.Add (emailPayload);
 			profile.PayloadContent.Add (exchPayload);
 
             // Write to file

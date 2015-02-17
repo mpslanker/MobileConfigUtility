@@ -102,5 +102,13 @@ namespace MobileConfigUtility
 
             writer.Close();
         }
+
+		public string GenerateUUID()
+		{
+			string uuid;
+			uuid = Guid.NewGuid ().ToString();
+
+			return uuid;
+		}
     }
 }
