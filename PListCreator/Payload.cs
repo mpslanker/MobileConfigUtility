@@ -216,7 +216,7 @@ namespace MobileConfigUtility
                 case (7):       // Boolean
                     string val1 = ka.DefaultsTo.ToString();
                     string val2 = pi.GetValue(this).ToString();
-                    if (!val1.Equals(val2,StringComparison.CurrentCultureIgnoreCase))
+				if (!val1.Equals(val2,StringComparison.CurrentCultureIgnoreCase) || ka.Presence.GetHashCode() == 1)
                     {
                         flag = true;
                     }

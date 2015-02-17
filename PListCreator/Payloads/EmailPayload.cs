@@ -94,10 +94,7 @@ namespace MobileConfigUtility
 
         public EmailPayload ()
         {
-            PayloadIdentifier = "";
-            PayloadUUID = "";
             PayloadType = "com.apple.mail.managed";
-            PayloadVersion = 1;
         }
     }
 }
