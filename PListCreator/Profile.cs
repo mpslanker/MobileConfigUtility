@@ -19,7 +19,7 @@ namespace MobileConfigUtility
         [KeyAttributes("PayloadExpirationDate",PlistType.Date)]
         public DateTime PayloadExpirationDate { get; set; }			    // Date
         
-        [KeyAttributes("PayloadRemovalDisallowed",PlistType.Boolean)]
+        [KeyAttributes("PayloadRemovalDisallowed",PlistType.Boolean,"false")]
         public bool PayloadRemovalDisallowed { get; set; }				// Boolean
         
         [KeyAttributes("PayloadScope",PlistType.String)]
@@ -41,7 +41,6 @@ namespace MobileConfigUtility
             PayloadContent = new List<Payload>();
             // This is a must from Apple.
             PayloadType = "Configuration";
-            PayloadVersion = 1;
         }
     }
 }
