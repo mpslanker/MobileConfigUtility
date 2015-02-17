@@ -70,7 +70,7 @@ namespace MobileConfigUtility
 		[KeyAttributes("ExternalHost", PlistType.String, Presence.Optional)]
 		public string ExternalHost { get; set; }
 
-		[KeyAttributes("ExternalSSL", PlistType.Boolean, Presence.Optional)]
+		[KeyAttributes("ExternalSSL", PlistType.Boolean, "true", Presence.Optional)]
 		public bool ExternalSSL { get; set; }
 
 		[KeyAttributes("ExternalPath", PlistType.String, Presence.Optional)]

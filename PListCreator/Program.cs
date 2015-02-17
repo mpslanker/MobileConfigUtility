@@ -71,7 +71,7 @@ namespace MobileConfigUtility
             emailPayload.IncomingMailServerUsername = "email@example.com";
             emailPayload.IncomingPassword = "your_password";
             emailPayload.OutgoingPasswordSameAsIncomingPassword = true;
-            emailPayload.OutgoingMailServerAuthentication = "EmailAuthPassword";
+            emailPayload.OutgoingMailServerAuthentication = ServerAuthMethods.EmailAuthPassword;
             emailPayload.OutgoingMailServerHostName = "email.example.com";
             emailPayload.OutgoingMailServerPortNumber = 25;
             emailPayload.OutgoingMailServerUseSSL = false;

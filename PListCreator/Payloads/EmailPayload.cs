@@ -56,7 +56,7 @@ namespace MobileConfigUtility
         public bool OutgoingPasswordSameAsIncomingPassword { get; set; }
 
         [KeyAttributes("OutgoingMailServerAuthentication",PlistType.String,Presence.Required)]
-        public string OutgoingMailServerAuthentication { get; set;}
+        public ServerAuthMethods OutgoingMailServerAuthentication { get; set; }
 
         [KeyAttributes("OutgoingMailServerHostName",PlistType.String,Presence.Required)]
         public string OutgoingMailServerHostName { get; set; }
