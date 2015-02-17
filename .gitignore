@@ -1,3 +1,9 @@
+# Ignore specific files
+MobileConfigUtility.userprefs
+
+# Ignore wildcard patterns
+
+# Ignore entire directories
 PListCreator/bin
 PListCreator/obj
 
