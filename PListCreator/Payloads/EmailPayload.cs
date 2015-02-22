@@ -40,7 +40,7 @@ namespace MobileConfigUtility
         [KeyAttributes("IncomingMailServerPortNumber",PlistType.Integer, "0")]
         public int IncomingMailServerPortNumber { get; set; }
 
-        [KeyAttributes("IncomingMailServerUseSSL",PlistType.Boolean, "true")]
+        [KeyAttributes("IncomingMailServerUseSSL",PlistType.Boolean, "true", Presence.Required)]
         public bool IncomingMailServerUseSSL { get; set; }
 
         [KeyAttributes("IncomingMailServerUsername",PlistType.String,Presence.Required)]

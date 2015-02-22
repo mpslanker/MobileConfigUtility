@@ -52,7 +52,7 @@ namespace MobileConfigUtility
 		[KeyAttributes ("SMIMEEnablePerMessageSwitch", PlistType.Boolean, "false")]
 		public bool SMIMEEnablePerMessageSwitch { get; set; }
 
-		[KeyAttributes("disableMailRecentsSyncing", PlistType.Boolean, "false")]
+		[KeyAttributes("disableMailRecentsSyncing", PlistType.Boolean, "false", Presence.Required)]
 		public bool disableMailRecentsSyncing { get; set; }
 
 		[KeyAttributes("MailNumberOfPastDaysToSync", PlistType.Integer)]

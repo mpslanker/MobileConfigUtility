@@ -19,7 +19,7 @@ namespace MobileConfigUtility
         [KeyAttributes("PayloadExpirationDate",PlistType.Date)]
         public DateTime PayloadExpirationDate { get; set; }			    // Date
         
-        [KeyAttributes("PayloadRemovalDisallowed",PlistType.Boolean,"false")]
+        [KeyAttributes("PayloadRemovalDisallowed",PlistType.Boolean,"false", Presence.Required)]
         public bool PayloadRemovalDisallowed { get; set; }				// Boolean
         
         [KeyAttributes("PayloadScope",PlistType.String)]
